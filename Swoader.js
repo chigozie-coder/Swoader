@@ -63,9 +63,7 @@ class Swoader {
         this.loader.style.borderRightColor = "transparent";
         this.loader.style.animation = 'rotate 800ms linear infinite'
         this.lotext = document.getElementById('lotext');
-        this.lotext.style.fontSize = this.size/2;
         this.lotext.style.fontFamily = "courier";
-        this.lotext.style.color = "white";
         this.lotext.style.fontWeight = "bolder";
     }
     
@@ -76,9 +74,9 @@ class Swoader {
        },time)
     }
     removeWhenWindowLoaded(){
-        window.addEventListener('DOMcontentLoaded', function(){
-        setTimeout(()=>{
-            this.loadcon.style.display="none";
-        },3)
-        });
-    }
+       addEventListener("DOMContentLoaded",()=>{
+setTimeout(()=>{
+    this.loadcon.style.display="none";},3);
+});
+   }
+}
