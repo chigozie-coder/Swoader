@@ -23,7 +23,7 @@ class Swoader {
             this.addStyles();
         },2);
     }
-    addText(text){
+    addText(text,size,color){
         setTimeout(()=>{
         this.lotext = document.getElementById('lotext');
         this.lotext.innerHTML = text;
@@ -74,10 +74,9 @@ class Swoader {
        },time)
     }
     removeWhenWindowLoaded(){
-        window.onload=()=>{
+        window.addEventListener('DOMcontentLoaded', function(){
         setTimeout(()=>{
             this.loadcon.style.display="none";
         },3)
-        }
+        });
     }
-}
