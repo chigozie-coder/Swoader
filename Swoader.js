@@ -27,6 +27,8 @@ class Swoader {
         setTimeout(()=>{
         this.lotext = document.getElementById('lotext');
         this.lotext.innerHTML = text;
+        this.lotext.style.fontSize = size;
+        this.lotext.style.color = color;
         this.addStyles()
         },2)
     }
