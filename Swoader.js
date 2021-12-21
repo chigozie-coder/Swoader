@@ -74,7 +74,7 @@ class Swoader {
        },time)
     }
     removeWhenWindowLoaded(){
-       addEventListener("DOMContentLoaded",()=>{
+       window.addEventListener("load",()=>{
 setTimeout(()=>{
     this.loadcon.style.display="none";},3);
 });
