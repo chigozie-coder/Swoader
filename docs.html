@@ -1,0 +1,144 @@
+<!--
+This is the Documentation of usage for my js library Swoader.js
+Features
+★ Responsive
+★ Customizable
+★ Convenient...
+https://chigozie-coder.github.io/Swoader/Swoader.js
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Docs of usage</title>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://chigozie-coder.github.io/Swoader/Swoader.js"></script>
+         <script type="text/javascript" charset="utf-8">
+           var swoader = new Swoader();
+           swoader.start()
+           swoader.addText("loading","50px","white")
+           swoader.animateText()
+           swoader.removeWhenWindowLoaded()
+            
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <div id="htext">
+                SWOADER.JS
+            </div>
+        </div>
+        <div id="des">
+            Create beautiful preloader with just few lines of code. Its customizable and compatible with all JavaScript supported browsers. The loader shown on this code is created using Swoader.js.
+            
+        </div>
+        <div id="sc">
+            <div class="d">for importing </div>
+<b>&lt;script src="https://chigozie-coder.github.io/Swoader/Swoader.js"&gt;&lt;/script&gt;</b>
+        </div>
+        <div class="cc">
+            <div class="d">for initializing </div>
+            <b>var swoader = new Swoader()
+            swoader.start();</b>
+            
+        </div>
+        <div class="cc">
+            <div class="d">
+                for styling </div>
+            <b>var swoader = new Swoader(color,size,bg)
+            swoader.start();</b>
+        </div>
+        <div class="cc">
+            <div class="d">to set time to remove add this </div>
+            <b>swoader.removeWhenLoaded(time in ms);</b>
+        </div>
+        <div class="cc">
+            <div class="d">To remove it when the window has loaded </div>
+            <b>swoader.removeWhenWindowLoad();</b>
+        </div>
+        <div class="cc">
+            <div class="d">To add a loading text </div>
+            <b>swoader.addText(text, size,color);</b>
+        </div>
+        <div class="cc">
+            <div class="d">To animate text</div>
+            <b>swoader.animateText();</b>
+        </div>
+        <div class="cc">
+            <div class="d">To display text instead of loader</div>
+            <b>swoader.displayOnlyText();</b>
+        </div>
+        <style type="text/css">
+            html,body{
+                margin: 0;
+                padding: 0;
+                -webkit-tap-highlight-color: none;
+                scroll-behavior: smooth;
+                background-color: ;
+            }
+            #header{
+                background-color: #2890EA;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                height: 10vh;
+                width: 100%;
+                font-size: 20px;
+            }
+            #htext{
+                font-family: 'Merienda', courier;
+            }
+            #des{
+                background-color: #FFFFFF;
+                width: 70%;
+                height: 19vh;
+                margin-left: 15%;
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                border-radius: 20px;
+                box-shadow: 0 0 5px #414141;
+            }
+            #sc{
+                overflow-x: scroll;
+                background-color: #424242;
+                width: 90%;
+                margin-left: 5%;
+                height: 50px;
+                margin-top: 10px;
+                border-radius: 3px;
+                font-family: monospace;
+                color: white;
+                display: flex;
+            }
+            .cc{
+                background-color: #424242;
+                border: 1px solid #787878;
+                width: 70%;
+                height: 10%;
+                margin-left: 15%;
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                border-radius: 3px;
+                color: white;
+                font-family: Monospace;
+                overflow-x: scroll;
+            }
+            
+            .d{
+                color:red;
+                font-family: serif;
+                font-weight: bolder;
+            }
+        </style>
+       
+    </body>
+</html>
